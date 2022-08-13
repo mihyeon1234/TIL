@@ -1,16 +1,18 @@
-t = int(input())
-li = list(map(int, input().split()))
+import sys
 
-stu = int(input())
+t = int(sys.stdin.readline())
+li = list(map(int, sys.stdin.readline().split()))
+
+stu = int(sys.stdin.readline())
 for i in range(stu):
-    gen, num = map(int, input().split())
+    gen, num = map(int, sys.stdin.readline().split())
     if gen == 1:
         n = 1
         while n <= t//num:
             if li[num * n -1] == 0:
                 li[num * n -1] = 1
                 n += 1
-            elif li[num * n -1] == 1:
+            else:
                 li[num * n -1] = 0
                 n += 1
     elif gen == 2:
