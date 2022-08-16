@@ -28,10 +28,10 @@ for tt in range(1,t+1):
                 elif num > maxi:
                      maxi = numi
                      num = 0
-            if num > maxi:
-                maxi = num
+        if num > maxi:
+            maxi = num
 
-    if maxi < 2:
+    if maxi <= 2:
         maxi = 0
 
     print(f'#{tt} {maxi}')
