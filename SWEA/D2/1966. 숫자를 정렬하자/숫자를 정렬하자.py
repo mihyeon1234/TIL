@@ -1,10 +1,7 @@
-
 t = int(input())
-
-for tt in range(t):
-    n = int(input())
-    arr = list(map(int, input().split()))
-
-    li = sorted(arr, reverse=False)
-    print(f'#{tt+1}',end=' ')
-    print(*li)
+for tt in range(1, t+1):
+    num = int(input())
+    li = list(map(int, input().split()))
+    sli = sorted(li)
+    print(f'#{tt}', end=' ')
+    print(*sli)
