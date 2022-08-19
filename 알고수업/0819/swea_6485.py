@@ -1,13 +1,19 @@
 import sys
 sys.stdin = open('swea_6485.txt')
 
-t = int(input())
-for tt in range(1, t+1):
-    n = int(input())
-    a, b = [], []
-    for _ in range(n):
-        aa, bb = map(int, input().split())
-        a.append(aa)
-        b.append(bb)
+T = int(input())
 
-    print(a,b)
+for t in range(1, T + 1):
+    string = ''
+    bus = [0]*5000
+    cnt = []
+    N = int(input())
+    for i in range(N):
+        a, b = map(int, input().split())
+        for j in range(a - 1, b):
+            bus[j] += 1
+    P = int(input())
+    for p in range(P):
+        string = string + ' ' + str(bus[int(input()) - 1])
+    print('#' + str(t) + string)
+
