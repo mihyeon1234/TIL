@@ -13,5 +13,6 @@ for i in range(1<<len(a)):
             su.append(a[j])
     if len(su) == 7 and sum(su) == 100:
         re = sorted(su)
+        break
 for k in range(7):
     print(re[k])
