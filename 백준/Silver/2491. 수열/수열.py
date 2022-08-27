@@ -11,11 +11,9 @@ for i in range(1, num):
         arr_plus += 1
         if arr_plus > maxarr:
             maxarr = arr_plus
-    else:
+    elif arr[i - 1] > arr[i]:
         arr_plus = 1
-
-for j in range(1, num):
-    if arr[j-1] >= arr[j]:
+    if arr[i - 1] >= arr[i]:
         arr_m += 1
         if arr_m > maxarr:
             maxarr = arr_m
