@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2161d4f7-5682-4c2d-8096-470ec5642300" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/백준/boj_2578_빙고.py" beforeDir="false" afterPath="$PROJECT_DIR$/백준/boj_2578_빙고.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +41,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.swea_5102">
-    <configuration name="swea_1223" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.boj_2578_빙고">
+    <configuration name="boj_2578_빙고" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="알고수업" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -49,11 +50,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/0822" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/백준" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0822/swea_1223.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/boj_2578_빙고.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.boj_2578_빙고" />
         <item itemvalue="Python.swea_5102" />
         <item itemvalue="Python.swea_5105" />
         <item itemvalue="Python.swea_5097" />
         <item itemvalue="Python.swea_4874" />
-        <item itemvalue="Python.swea_1223" />
       </list>
     </recent_temporary>
   </component>

@@ -5,13 +5,13 @@ mc_arr = [list(map(int,input().split())) for _ in range(5)]
 
 co = 0
 mc_co = 0
-lico = []
 for a in range(5):
     for b in range(5):
         mc_co += 1
         sumy = 0
         sunmy = 0
         sunsl = 0
+        print(mc_arr[a][b])
         for c in range(5):
             for d in range(5):
                 if mc_arr[a][b] == my_arr[c][d]:

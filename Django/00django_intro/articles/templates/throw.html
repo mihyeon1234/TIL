@@ -1,0 +1,10 @@
+{%extends 'base.html'%}
+{%block content%}
+    <h2>Throw</h2>
+    <form action="/catch/" method="GET">
+        <label for="message">Throw</label>
+        <input type="text" name="message" id="message">
+        <input type="submit">
+    </form>
+    <a href='/index/'>뒤로</a>
+{% endblock %}
