@@ -33,8 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     #Local apps
     'articles',
-    # Third party apps
-    # 'haystack',
+    'pages',
     # Django apps
     'django.contrib.admin',
     'django.contrib.auth',
