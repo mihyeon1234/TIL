@@ -1,6 +1,8 @@
 import sys
 T = int(sys.stdin.readline())
+
 li=[0]*10001
+
 for t in range(T):
    li[int(sys.stdin.readline())] += 1
    
