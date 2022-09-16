@@ -2,7 +2,6 @@ n = int(input())
 li = list(map(int,input().split()))
 fn = int(input())
 fli = list(map(int,input().split()))
-li.sort()
 
 dli = dict()
 for i in li:
