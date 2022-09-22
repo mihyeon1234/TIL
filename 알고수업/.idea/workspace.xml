@@ -2,8 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2161d4f7-5682-4c2d-8096-470ec5642300" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02django/articles/templates/articles/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/02django/articles/templates/articles/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02django/articles/templates/articles/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/02django/articles/templates/articles/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02django/articles/templates/articles/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02django/articles/templates/articles/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/02django/articles/templates/articles/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02django/articles/templates/articles/new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02django/articles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/02django/articles/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02django/articles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/02django/articles/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02django/crud/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/02django/crud/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/02django/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Django/02django/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D1/9386. 연속한 1의 개수/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D1/9386. 연속한 1의 개수/연속한 1의 개수.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D2/1966. 숫자를 정렬하자/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D2/1966. 숫자를 정렬하자/숫자를 정렬하자.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D2/1974. 스도쿠 검증/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D2/1974. 스도쿠 검증/스도쿠 검증.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D2/1979. 어디에 단어가 들어갈 수 있을까/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D2/1979. 어디에 단어가 들어갈 수 있을까/어디에 단어가 들어갈 수 있을까.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D2/2001. 파리 퇴치/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D2/2001. 파리 퇴치/파리 퇴치.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D3/1221. ［S／W 문제해결 기본］ 5일차 － GNS/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D3/1221. ［S／W 문제해결 기본］ 5일차 － GNS/［S／W 문제해결 기본］ 5일차 － GNS.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D3/14692. 통나무 자르기/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D3/14692. 통나무 자르기/통나무 자르기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D3/5356. 의석이의 세로로 말해요/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D3/5356. 의석이의 세로로 말해요/의석이의 세로로 말해요.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D3/6485. 삼성시의 버스 노선/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D3/6485. 삼성시의 버스 노선/삼성시의 버스 노선.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D4/1210. ［S／W 문제해결 기본］ 2일차 － Ladder1/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SWEA/D4/1210. ［S／W 문제해결 기본］ 2일차 － Ladder1/［S／W 문제해결 기본］ 2일차 － Ladder1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Untitled Folder/ test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Untitled Folder/ test.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Untitled Folder/.ipynb_checkpoints/ test-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Untitled Folder/.ipynb_checkpoints/ test-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/백준/boj_2578_빙고.py" beforeDir="false" afterPath="$PROJECT_DIR$/백준/boj_2578_빙고.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +71,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="Python.boj_2578_빙고">
-    <configuration name="boj_2578_빙고" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.swea_5201">
+    <configuration name="swea_1242" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="알고수업" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -50,11 +82,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/백준" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/0920" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/boj_2578_빙고.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0920/swea_1242.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -63,7 +95,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="swea_4874" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="swea_5185" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="알고수업" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -71,11 +103,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/0823" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/0920" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0823/swea_4874.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0920/swea_5185.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -84,7 +116,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="swea_5097" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="swea_5186" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="알고수업" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,11 +124,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/0825" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/0920" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0825/swea_5097.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0920/swea_5186.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,7 +137,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="swea_5102" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="swea_5201" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="알고수업" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -113,11 +145,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/0825" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/0922" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0825/swea_5102.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0922/swea_5201.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,7 +158,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="swea_5105" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="swea_5203_BabyGinGame" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="알고수업" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,11 +166,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/0825" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/0922" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0825/swea_5105.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0922/swea_5203_BabyGinGame.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.boj_2578_빙고" />
-        <item itemvalue="Python.swea_5102" />
-        <item itemvalue="Python.swea_5105" />
-        <item itemvalue="Python.swea_5097" />
-        <item itemvalue="Python.swea_4874" />
+        <item itemvalue="Python.swea_5201" />
+        <item itemvalue="Python.swea_5203_BabyGinGame" />
+        <item itemvalue="Python.swea_1242" />
+        <item itemvalue="Python.swea_5185" />
+        <item itemvalue="Python.swea_5186" />
       </list>
     </recent_temporary>
   </component>
