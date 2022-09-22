@@ -2,7 +2,11 @@
 
 {% block content %}
   <h1>Articles</h1>
+<<<<<<< HEAD
   <a href="{% url 'articles:create' %}">NEW</a>
+=======
+  <a href="{% url 'articles:create' %}">CREATE</a>
+>>>>>>> 4fbd571233447c9e41e5ee8962dca603b383fe79
   <hr>
   {% for article in articles %}
     <p>글 번호 : {{ article.pk }}</p>

@@ -32,7 +32,12 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'articles',
+<<<<<<< HEAD
     # 'django_extensions',
+=======
+    'django_extensions',
+    'bootstrap5',
+>>>>>>> 4fbd571233447c9e41e5ee8962dca603b383fe79
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -56,7 +61,11 @@ ROOT_URLCONF = 'crud.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': [BASE_DIR, 'templates',],
+=======
+        'DIRS': [BASE_DIR / 'templates',],
+>>>>>>> 4fbd571233447c9e41e5ee8962dca603b383fe79
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
