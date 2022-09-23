@@ -6,7 +6,11 @@ from .forms import ArticleForm
 
 
 # Create your views here.
+<<<<<<< HEAD
+@require_safe # GET일때
+=======
 @require_safe
+>>>>>>> 4fbd571233447c9e41e5ee8962dca603b383fe79
 def index(request):
     articles = Article.objects.all()
     context = {
@@ -15,7 +19,11 @@ def index(request):
     return render(request, 'articles/index.html', context)
 
 
+<<<<<<< HEAD
+@login_required # 사용자가 로그인 한 경우 페이지가 정상적인 실행됨
+=======
 @login_required
+>>>>>>> 4fbd571233447c9e41e5ee8962dca603b383fe79
 @require_http_methods(['GET', 'POST'])
 def create(request):
     if request.method == 'POST':

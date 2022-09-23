@@ -4,7 +4,11 @@
   <h1>UPDATE</h1>
   <form action="{% url 'articles:update' article.pk %}" method="POST">
     {% csrf_token %}
+<<<<<<< HEAD
+    {{form.as_p}}
+=======
     {{ form.as_p }}
+>>>>>>> 4fbd571233447c9e41e5ee8962dca603b383fe79
     {% comment %} <label for="title">Title: </label>
     <input type="text" name="title" id="title" value="{{ article.title }}"><br>
     <label for="content">Content: </label>
@@ -13,4 +17,8 @@
   </form>
   <hr>
   <a href="{% url 'articles:detail' article.pk %}">뒤로가기</a>
+<<<<<<< HEAD
 {% endblock content %}
+=======
+{% endblock content %}
+>>>>>>> 4fbd571233447c9e41e5ee8962dca603b383fe79
