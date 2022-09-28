@@ -40,7 +40,7 @@ for T in range(1, t+1):
                 sbli.sort()
                 for b in range(len(sbli)-2):
                     if sbli[b]+2 == sbli[b+1]+1 == sbli[b+2]:
-                        if ans == 0:.
+                        if ans == 0:
                             ans = 2
                             turn = False
                             break

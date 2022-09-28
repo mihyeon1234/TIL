@@ -31,9 +31,9 @@ def find_root(V):
             return i
 
 
-E = int(input())
+E = int(input())  # 간선 수
 arr = list(map(int, input().split()))
-V = E + 1
+V = E + 1  # 정점 수
 root = 1
 # 부모를 인덱스로 자식 번호 저장
 ch1 = [0]*(V + 1)
@@ -47,8 +47,8 @@ for i in range(E):
     else:
         ch2[p] = c
     par[c] = p
-root = find_root(V)
+# root = find_root(V)
 print(root)
-# preorder(root)
+preorder(root)
 # inorder(root)
 # postorder(root)
