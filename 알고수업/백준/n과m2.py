@@ -4,9 +4,7 @@ li = []
 
 def dfs(start):
     if len(li)==m:
-        for j in li:
-            print(j, end=' ')
-        print()
+        print(*li)
         return
     for i in range(start, 1+n):
         if i not in li:
