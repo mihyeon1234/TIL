@@ -1,19 +1,60 @@
 T = int(input())
 for t in range(1, T+1):
     n = int(input())
-    li = list(map(int, input().split()))
-    li = [0] + li + [0]  # 앞뒤에 0붙여서 첫번째, 마지막 봉우리도 쉽게 찾오록
-    reli = [0]*n
-    re = 0
-    for i in range(len(li)-2): # 3개씩 연속해서 검사
-        if li[i] <= li[i+1] and li[i+1] >= li[i+2]: # 젤왼쪽값이 가운데 값보다 작거나 같고, 중간값이 오른쪽값보다 크거나 같으면
-            reli[i] = 1                                # 봉우리 리스트에 추가
-            re += 1
+    graph = [list(map(int, input().split())) for _ in range(n)]
 
-    for i in range(len(reli)-1):
-        if reli[i]==1 and reli[i+1]==1:         # 봉우리 리스트가 연속되면
-            reli[i] = 0                         # 앞 봉우리 체크는 지우고 다시 봉우리 세기기    print(f'#{t} {sum(reli)}')
+    def search(x, y):        # x+1 재귀
+        if x < 0 or x >= n or y < 0 or y >= n: # 벽에 닿으면 끝
+            return
+        if graph[x][y] == 1:        # 장애물이 나와도 끝
+            return
+        if graph[x][y] == 0:     # 공격가능한 위치면 3으로 변경
+            graph[x][y] = 3
 
-    print(f'#{t} {sum(reli)}')
+        search(x + 1, y)
 
 
+
+    def search2(x, y):      # y+1 재귀
+        if x < 0 or x >= n or y < 0 or y >= n:  # 벽에 닿으면 끝
+            return
+        if graph[x][y] == 1:  # 장애물이 나와도 끝
+            return
+        if graph[x][y] == 0:     # 공격가능한 위치면 3으로 변경
+            graph[x][y] = 3
+
+        search2(x, y + 1)
+
+
+    def search3(x, y):      # x-1 재귀
+        if x < 0 or x >= n or y < 0 or y >= n:  # 벽에 닿으면 끝
+            return
+        if graph[x][y] == 1:  # 장애물이 나와도 끝
+            return
+        if graph[x][y] == 0:     # 공격가능한 위치면 3으로 변경
+            graph[x][y] = 3
+
+        search3(x - 1, y)
+
+    def search4(x, y):      # y-1 재귀
+        if x < 0 or x >= n or y < 0 or y >= n:  # 벽에 닿으면 끝
+            return
+        if graph[x][y] == 1:  # 장애물이 나와도 끝
+            return
+        if graph[x][y] == 0:     # 공격가능한 위치면 3으로 변경
+            graph[x][y] = 3
+
+        search4(x, y - 1)
+
+    for i in range(n):
+        for j in range(n):
+            if graph[i][j] == 2:
+                search(i,j)
+                search2(i, j)
+                search3(i, j)
+                search4(i, j)
+
+    cnt = 0
+    for i in graph:
+        cnt += i.count(0)
+    print(f'#{t} {cnt}')

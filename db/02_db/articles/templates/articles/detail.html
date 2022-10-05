@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>DETAIL</h1>
+  <h2>{{ article.pk }}번째 글입니다.</h2>
+  <hr>
+  <p><b>작성자 : {{article.user}}</b></p>
+  <p>제목 : {{ article.title }}</p>
+  <p>내용 : {{ article.content }}</p>
+  <p>작성 시각 : {{ article.created_at }}</p>
+  <p>수정 시각 : {{ article.updated_at }}</p>
+  {% comment %} 내가 쓴 글이 아니라면 수정, 삭제 버튼이 안보이게 {% endcomment %}
+  {% if request.user == article.user %}  
+    <a href="{% url 'articles:update' article.pk %}">UPDATE</a>
+    <form action="{% url 'articles:delete' article.pk %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="DELETE">
+    </form>
+  {% endif %}
+  <hr>
+  <a href="{% url 'articles:index' %}">뒤로가기</a>
+  <hr>
+  <h4> 댓글 목록 </h4>
+  <ul>
+   {%if comments %}   {% comment %}   댓글이 있다면 {% endcomment %}
+        {% comment %} <p>댓글 수 : {{comments|length}}</p> {% endcomment %}
+      <p> 댓글 수 : {{comments.count}}</p>
+    {% endif %}
+    {% for comment in comments %}
+      <li>{{comment.user}} - {{comment.content}}</li>
+      {% if request.user == comment.user %}    {% comment %} 내가 쓴 댓글이 아니라면 삭제 버튼이 안보이게 {% endcomment %}
+        <form action="{% url 'articles:comments_delete' article.pk comment.pk %}" method="POST">
+          {% csrf_token %}
+          <input type="submit" value="DELETE">
+        </form>
+      {% endif %}
+      {% comment %} for 문안에 댓글이 없다면 {% endcomment %}
+    {% empty %}
+      <p>댓글이 없어요..</p>
+    {% endfor %}
+  </ul>
+
+  <hr>
+  <form action="{% url 'articles:comments_create' article.pk %}" method="POST">
+    {% csrf_token %}
+    {{ comment_form }}
+    <input type="submit">
+  </form>
+{% endblock content %}

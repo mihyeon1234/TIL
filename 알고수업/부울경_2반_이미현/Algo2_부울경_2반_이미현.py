@@ -1,65 +1,20 @@
-'''
-3
-3
-4
-5
-'''
-
-'''
-#1 3 2 3 
-#2 3 2 4 4 
-#3 5 5 3 4 5
-'''
-
-
 T = int(input())
-
-
 for t in range(1, T+1):
-    def a(n): # 전위
-        if n <= size:
-            ali.append(tree[n])
-            a(2 * n)
-            a(2 * n + 1)
+    n, m = map(int, input().split())
+    li = list(map(int, input().split()))
 
+    rli = []
+    for i in li:
+        if i%4 == 0 or i%6 == 0 or i%7 == 0 or i%9 == 0 or i%11 == 0:  # 보석의 배수에 하나라도 해당되면
+            rli.append(i)       # 새로운 리스트에 추가
 
-    def b(n):  # 중위
-        if n <= size:
-            b(2 * n)
-            bli.append(tree[n])
-            b(2 * n + 1)
-
-    def c(n):  # 후위
-        if n <= size:
-            c(2 * n)
-            c(2 * n + 1)
-            cli.append(tree[n])
-
-
-    V = int(input())
-    tree = [0]+[i for i in range(1, V + 1)]
-    ali = []
-    bli = []
-    cli = []
-    size = len(tree) - 1
-    a(1)
-    b(1)
-    c(1)
-
-    def reb(n):  # 다시만든 리스트의 중위
-        if n <= size:
-            reb(2 * n)
-            li.append(reli[n])
-            reb(2 * n + 1)
-
-    reli = [0]
-    li = []
-    for i in range(V):
-        reli.append(max(ali[i], bli[i], cli[i]))
-    reb(1)
-    print(f'#{t}', end=' ')
-    print(*li)
-
-
-
-
+    result = []
+    for i in range(1 << len(rli)):  # 0땜에 공집합 포함
+        subset = []
+        for j in range(len(rli)):
+            if i & (1 << j):
+                subset.append(rli[j])
+        if sum(subset) <= m:        # 예산 이하인 값만 저장
+            result.append(sum(subset))
+    result.sort()   # 정렬
+    print(f'#{t} {result[-1]}')     #정렬후 예산으로 살수 있는 보석의 최고값 프린트

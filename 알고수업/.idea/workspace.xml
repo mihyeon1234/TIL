@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="2161d4f7-5682-4c2d-8096-470ec5642300" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/백준/boj_1012_유기농배추.py" beforeDir="false" afterPath="$PROJECT_DIR$/백준/boj_1012_유기농배추.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0921/nCr.py" beforeDir="false" afterPath="$PROJECT_DIR$/0921/nCr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0921/npr2.py" beforeDir="false" afterPath="$PROJECT_DIR$/0921/npr2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0921/npr3.py" beforeDir="false" afterPath="$PROJECT_DIR$/0921/npr3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0928/dikstra.py" beforeDir="false" afterPath="$PROJECT_DIR$/0928/dikstra.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/부울경_2반_이미현.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/부울경_2반_이미현/Algo1_부울경_2반_이미현.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/부울경_2반_이미현/Algo2_부울경_2반_이미현.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/부울경_2반_이미현/Algo3_부울경_2반_이미현.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +54,8 @@
       <recent name="C:\Users\SSAFY\Desktop\ssafy\TIL\알고수업\백준" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.n과m9">
-    <configuration name="boj_24445_bfs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.boj_1003_피보나치함수">
+    <configuration name="비트연산" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="알고수업" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -56,11 +63,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/백준" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/0921" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/boj_24445_bfs.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0921/비트연산.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -69,7 +76,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="n과m6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Algo1_부울경_2반_이미현" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="알고수업" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -77,11 +84,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/백준" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/부울경_2반_이미현" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/n과m6.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/부울경_2반_이미현/Algo1_부울경_2반_이미현.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -90,7 +97,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="n과m7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Algo2_부울경_2반_이미현" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="알고수업" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -98,11 +105,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/백준" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/부울경_2반_이미현" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/n과m7.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/부울경_2반_이미현/Algo2_부울경_2반_이미현.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -111,7 +118,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="n과m8" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Algo3_부울경_2반_이미현" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="알고수업" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -119,11 +126,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/백준" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/부울경_2반_이미현" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/n과m8.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/부울경_2반_이미현/Algo3_부울경_2반_이미현.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -132,7 +139,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="n과m9" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="boj_1003_피보나치함수" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="알고수업" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -144,7 +151,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/n과m9.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/boj_1003_피보나치함수.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.n과m9" />
-        <item itemvalue="Python.n과m8" />
-        <item itemvalue="Python.n과m7" />
-        <item itemvalue="Python.n과m6" />
-        <item itemvalue="Python.boj_24445_bfs" />
+        <item itemvalue="Python.boj_1003_피보나치함수" />
+        <item itemvalue="Python.Algo1_부울경_2반_이미현" />
+        <item itemvalue="Python.Algo2_부울경_2반_이미현" />
+        <item itemvalue="Python.Algo3_부울경_2반_이미현" />
+        <item itemvalue="Python.비트연산" />
       </list>
     </recent_temporary>
   </component>
