@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>DETAIL</h1>
+  <hr>
+  <div>
+    <img src="{{ movie.poster_url }}" alt="영화 포스터가 존재하지 않습니다.">
+    <h3>{{ movie.title }}</h3>
+    <p>Audience : {{ movie.audience }}</p>
+    <p>Release Dates : {{ movie.release_date }}</p>
+    <p>Genre : {{ movie.genre }}</p>
+    <p>Score : {{ movie.score }}</p>
+    <p>{{ movie.description }}</p>
+    <div class="d-flex flex-row my-5" >
+      <a class='btn btn-primary' href="{% url 'movies:update' movie.pk %}">UPDATE</a>
+      <form action="{% url 'movies:delete' movie.pk %}" method="POST">
+          {% csrf_token %}
+          <input class='btn btn-danger  mx-2' type="submit" value="DELETE">
+      </form>
+    </div>
+    
+    <a class='btn btn-warning' href="{% url 'movies:index' %}">BACK</a>
+  </div>
+{% endblock content %}

@@ -22,7 +22,7 @@
   <hr>
   <h4> 댓글 목록 </h4>
   <ul>
-   {%if comments %}   {% comment %}   댓글이 있다면 {% endcomment %}
+    {%if comments %}   {% comment %}   댓글이 있다면 {% endcomment %}
         {% comment %} <p>댓글 수 : {{comments|length}}</p> {% endcomment %}
       <p> 댓글 수 : {{comments.count}}</p>
     {% endif %}

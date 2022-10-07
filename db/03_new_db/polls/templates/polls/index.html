@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Either Game</h1>
+    <div>
+        <a type="botton"  class="btn btn-primary position-relative" href="{% url 'polls:create' %}">CREATE</a>
+    </div>
+    <hr>
+    {% for poll in polls %}
+        <div style="width: 18rem" class="border rounded-1 p-3">
+            <h3>{{poll.title}}</h3>
+            <a type="botton"  class="btn btn-warning position-relative" href="{% url 'polls:detail' poll.pk %}">CREATE</a>
+
+        </div>
+    {% endfor %}
+    
+
+{% endblock content %}
