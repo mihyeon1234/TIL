@@ -6,9 +6,9 @@ source venv/Scripts/activate
 
 3. pip install -r requirements.txt
 
-4. django-admin startproject crud .
+4. django-admin startproject mypjt .
 
-5. python manage.py startapp delivery
+5. python manage.py startapp movies
 
 6. vscode 켜서 앱 등록
 
