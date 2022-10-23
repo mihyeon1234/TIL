@@ -1,0 +1,16 @@
+$ pip install django-seed
+$ pip install psycopg2
+
+setting.py에 
+INSTALLED_APPS = [
+    'django_seed',
+    ]
+등록하기
+
+$ pip install -r requirements.txt 
+$ python manage.py migrate
+
+seed(목업데이터)를 articles 안에 있는 테이블들에 20개씩 데이터 넣기
+$ python manage.py seed articles --number=20
+
+$ pip freeze > requirements.txt 
