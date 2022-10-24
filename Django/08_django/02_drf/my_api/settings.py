@@ -32,9 +32,13 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'articles',
+<<<<<<< HEAD
+    'django_extensions',
+=======
     'django_seed',
     'django_extensions',
     'rest_framework',
+>>>>>>> caec6716b679e379072aff9bdc3495ebcece383a
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

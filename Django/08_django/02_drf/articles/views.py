@@ -1,4 +1,7 @@
 
+<<<<<<< HEAD
+
+=======
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import status
@@ -86,3 +89,4 @@ def comment_create(request, article_pk):
     if serializer.is_valid(raise_exception=True):
         serializer.save(article=article)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
+>>>>>>> caec6716b679e379072aff9bdc3495ebcece383a
