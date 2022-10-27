@@ -1,25 +1,29 @@
 import sys
-input = sys.stdin.readline
 sys.setrecursionlimit(10**5)
+input = sys.stdin.readline
 
-def dfs(cur_node, pre_node):
+
+def dfs(cur, past):
     global ans
-    max_d = 0
-    for next_node in graph[cur_node]:
-        if next_node != pre_node:
-            max_d = max(max_d,dfs(next_node, cur_node))
-    if max_d >= D:
+
+    dist = 0
+    for v in graph[cur]:
+        if v != past:
+            dist = max(dist, dfs(v, cur))
+    if dist >= d:
         ans += 1
-    return max_d + 1
+
+    return dist + 1
 
 
-N, S, D = map(int, input().split())
-graph = {i: [] for i in range(1,N+1)}
-visited = [0] * (N+1)
-ans = 0
-for _ in range(N-1):
+n, s, d = map(int, input().split())
+
+graph = [[] for _ in range(n + 1)]
+for _ in range(n - 1):
     x, y = map(int, input().split())
-    graph[x] += [y]
-    graph[y] += [x]
-dfs(S, 0)
-print(2*(ans-1) if ans else 0)
+    graph[x].append(y)
+    graph[y].append(x)
+
+ans = 0
+dfs(s, 0)
+print((ans - 1) * 2 if ans else 0)
