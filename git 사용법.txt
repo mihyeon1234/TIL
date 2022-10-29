@@ -1,0 +1,14 @@
+cd desktop -> 바탕화면으로 이동한다
+git init -> 바탕화면을 깃에 연결한다
+git clone '레파지토리 주소(니 깃에 다운받고싶은 레파지 토리 들어가면 우측에 clone이라고 있음 거기 있는 주소)' 폴더명(입력 안하면 레파지토리랑 동일한 폴더명으로 생성됨)
+
+이까지가 깃 클론(다운해서 연결)하는거고
+
+니가 만들고 싶은 파일 폴더에 넣든 따로 하든 programmers 폴더 안에서만 지지고 볶고
+git pull origin main
+git add . -> 변경된 내용을 모두 programmers깃에 반영한다 
+git commit  -m '수정내용'
+git push -u origin main-> 커밋 내용까지 깃에 업로드
+
+push 까지 해야지만 깃허브 들어갔을때 반영 됨
+브랜치 나누고 작업후 머지 (브랜치 삭제)
