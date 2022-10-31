@@ -1,0 +1,10 @@
+1. JavaScript에서 표준(standard)가 중요한 이유를 서술하시오.
+ES6이전에 브라우저 마다 개발 언어가 달라서 개발자가 힘들었음.
+이걸 통일시킨게 자바스크립트
+
+
+2. 아래의 설명을 읽고 T/F 여부를 작성하시오.
+- DOM 에서 최상위 객체는 document다. F (window 임)
+
+- querySelectorAll 메서드를 통해 선택한 NodeList는 forEach 메서드를 사용할 수 있다. T
+- document.createElement 메서드를 통해 HTML 요소를 생성할 수 있다. T

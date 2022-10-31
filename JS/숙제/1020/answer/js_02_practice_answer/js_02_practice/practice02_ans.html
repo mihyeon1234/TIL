@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const users = [
+      { name: 'John', age: 31, isMarried: true, balance: 100, },
+      { name: 'Sarah', age: 22, isMarried: false, balance: 200, },
+      { name: 'Ashley', age: 25, isMarried: true, balance: 300, },
+      { name: 'Robert', age: 27, isMarried: false, balance: 400, },
+      { name: 'Tom', age: 35, isMarried: true, balance: 500, },
+    ]
+
+    // function version
+    // 1
+    // users.forEach(function (user) {
+    //   console.log(user.name)
+    // })
+
+    // // 2
+    // const marriedUsers = users.filter(function (user) {
+    //   return user.isMarried
+    // })
+
+    // // 3
+    // const tom = users.find(function (user) {
+    //   return user.name === 'Tom'
+    // })
+
+    // // 4
+    // const newUsers = users.map(function (user) {
+    //   user.isAlive = true
+    //   return user
+    // })
+
+    // // 5
+    // const totalBalance = users.reduce(function (acc, user) {
+    //   return acc + user.balance
+    // }, 0)
+
+    // Arrow function version
+    // 1
+    users.forEach(user => console.log(user.name))
+    console.log(users)
+
+    // 2
+    const marriedUsers = users.filter(user => {
+        console.log('a')
+        return user.isMarried})
+    console.log(marriedUsers)
+
+    // 3
+    const tom = users.find(user => user.name === 'Tom')
+    console.log(tom)
+
+    // 4
+    const newUsers = users.map(user => {
+      user.isAlive = true
+      return user
+    })
+    console.log(newUsers)
+    // 5
+    const totalBalance = users.reduce((acc, user) => acc + user.balance, 0)
+    cosole.log(totalBalance)
+
+  </script>
+</body>
+
+</html>

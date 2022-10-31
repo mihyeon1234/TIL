@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    // 1
+    const name = 'Tom'
+    console.log(`Hi, my name is ${name}`)
+
+    // 2 
+    const add = (x, y) => x + y
+    const square = x => x ** 2
+
+    // 3
+    const tom = {
+      name: 'Tom',
+      introduce() {
+        console.log('Hi, my name is' + this.name)
+      }
+    }
+
+    // 4
+    const url = 'https://test.com'
+    const data = { message: 'Hello World!' }
+
+    const request = { url, data }
+  </script>
+</body>
+
+</html>

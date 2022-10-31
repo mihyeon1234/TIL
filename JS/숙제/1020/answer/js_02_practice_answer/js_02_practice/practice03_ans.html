@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    // 1-1
+    const savedFile = {
+      name: 'profile',
+      extension: 'jpg',
+      size: 29930
+    }
+
+    // 인자로 받는 순간에 destructuring(구조분해)
+    function fileSummary({ name, extension, size }) {
+      console.log(`The file ${name}.${extension} is size of ${size} bytes.`)
+    }
+
+    fileSummary(savedFile);
+
+    // 1-2
+    const data = {
+      username: 'myName',
+      password: 'myPassword',
+      email: 'my@mail.com',
+    }
+    // destructuring(구조분해)로 한번에 할당
+    const { username, password, email } = data
+
+    console.log(username, password, email)
+
+    // 2
+    function addNumbers(...numbers) {
+      // 화살표 함수로 함께 리팩토링
+      return numbers.reduce((sum, number) => sum + number, 0)
+    }
+
+    console.log(addNumbers(1, 2, 3, 4, 5))
+
+    // 3-1
+    const defaultColors = ['red', 'green', 'blue'];
+    const favoriteColors = ['navy', 'black', 'gold', 'white']
+    // Array spread
+    const palette = [...defaultColors, ...favoriteColors]
+
+    // 3-2
+    const info1 = { name: 'Tom', age: 30 }
+    const info2 = { isMarried: true, balance: 3000 }
+    // object spread
+    const fullInfo = { ...info1, ...info2 }
+
+    console.log(fullInfo)
+  </script>
+</body>
+
+</html>

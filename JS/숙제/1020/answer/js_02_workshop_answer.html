@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <script>
+    function isPalindrome(str) {
+      const noSpaceStr = str.replaceAll(' ', '')
+
+      const arr = noSpaceStr.split('')
+      arr.reverse()
+      /* 
+        join을 사용해 문자열로 바꾸지 않고 
+        arr 과 arr.reverse()를 비교하면 같은 arr을 참조함.
+        
+          const a = [1, 2]
+          a === a.reverse()  //true
+      */
+      const reversedStr = arr.join('')
+
+      return noSpaceStr === reversedStr
+    }
+
+    console.log(
+      isPalindrome('a santa at nasa'),  // true
+      isPalindrome('google')  // false
+    )
+  </script>
+</body>
+
+</html>
