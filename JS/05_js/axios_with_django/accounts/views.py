@@ -8,7 +8,11 @@ from django.views.decorators.http import require_http_methods, require_POST
 from django.contrib.auth import get_user_model
 from django.http import JsonResponse
 
+<<<<<<< HEAD
 from accounts.forms import CustomUserChangeForm, CustomUserCreationForm
+=======
+from .forms import CustomUserChangeForm, CustomUserCreationForm
+>>>>>>> 1f00d49eb3bbc80771e9e5ce7f70587fbe8d6c00
 
 
 # Create your views here.

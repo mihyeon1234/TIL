@@ -22,7 +22,10 @@
           <input type="submit" value="좋아요" id="like-{{ article.pk }}">
         {% endif %}
       </form>
+<<<<<<< HEAD
       <p> 좋아요 갯수 : <span id = 'like-count-{{article.pk}}'>{{article.like_users.all|length}}</span> </p>
+=======
+>>>>>>> 1f00d49eb3bbc80771e9e5ce7f70587fbe8d6c00
     </div>
     <a href="{% url 'articles:detail' article.pk %}">상세 페이지</a>
     <hr>
@@ -50,6 +53,10 @@
           .then((response) => {
             // console.log(response)
             // console.log(response.data)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f00d49eb3bbc80771e9e5ce7f70587fbe8d6c00
             const isLiked = response.data.is_liked
 
             const likeBtn = document.querySelector(`#like-${articleId}`)
@@ -59,10 +66,13 @@
               likeBtn.value = '좋아요'
             }
             // likeBtn.value = isLiked ? '좋아요 취소' : '좋아요'
+<<<<<<< HEAD
             const likeCountTag = document.querySelector(`#like-count-${articleId}`)
             const likeCount = response.data.like_count
 
             likeCountTag.innerText = likeCount
+=======
+>>>>>>> 1f00d49eb3bbc80771e9e5ce7f70587fbe8d6c00
           })
           .catch((error) => {
             console.log(error.response)

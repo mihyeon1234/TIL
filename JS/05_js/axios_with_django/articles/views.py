@@ -3,8 +3,13 @@ from django.views.decorators.http import require_http_methods, require_POST, req
 from django.contrib.auth.decorators import login_required
 # from django.http import HttpResponse, HttpResponseForbidden
 from django.http import JsonResponse
+<<<<<<< HEAD
 from articles.models import Article, Comment
 from articles.forms import ArticleForm, CommentForm
+=======
+from .models import Article, Comment
+from .forms import ArticleForm, CommentForm
+>>>>>>> 1f00d49eb3bbc80771e9e5ce7f70587fbe8d6c00
 
 
 # Create your views here.
@@ -123,10 +128,15 @@ def likes(request, article_pk):
         else:
             article.like_users.add(request.user)
             is_liked = True
+<<<<<<< HEAD
         like_count = article.like_users.count(),
         context = {
             'is_liked': is_liked,
             'like_count': like_count,
+=======
+        context = {
+            'is_liked': is_liked,
+>>>>>>> 1f00d49eb3bbc80771e9e5ce7f70587fbe8d6c00
         }
         return JsonResponse(context)
     return redirect('accounts:login')
