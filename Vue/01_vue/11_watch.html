@@ -13,10 +13,10 @@
     <button @click="number++">+</button>
     <hr>
 
-    <!-- <h3>Change name</h3>
+    <h3>Change name</h3>
     <p>{{ name }}</p>
     <input type="text" v-model="name">
-    <hr> -->
+    <hr>
 
     <!-- <h3>push myObj</h3>
     <p>{{ myObj }}</p>
@@ -29,33 +29,33 @@
       el: '#app',
       data: {
         number: 0,
-        // name: '',
-        // myObj: {completed: true}
+        name: '',
+        myObj: { completed: true }
       },
       methods: {
-        // nameChange: function () {
-        //   console.log('name is changed')
-        // },
+        nameChange: function () {
+          console.log('name is changed')
+        },
 
-        // itemChange: function () {
-        //   this.myObj.completed = !this.myObj.completed
-        // }
+        itemChange: function () {
+          this.myObj.completed = !this.myObj.completed
+        }
       },
       watch: {
         number: function (val, oldVal) {
           console.log(val, oldVal)
         },
 
-        // name: {
-        //   handler: 'nameChange'
-        // },
+        name: {
+          handler: 'nameChange'
+        },
 
-        // myObj: {
-        //   handler: function (val) {
-        //     console.log(val)
-        //   },
-        //   deep: true
-        // },
+        myObj: {
+          handler: function (val) {
+            console.log(val)
+          },
+          deep: true
+        },
       }
     })
   </script>
