@@ -6,7 +6,7 @@
 전달받은 함수를 실행한다.T
 
 - 부모 컴포넌트는 props를 통해 자식 컴포넌트에게 이벤트를 보내고,
-자식 컴포넌트는 emit을 통해 부모 컴포넌트에게 데이터를 전달한다.T
+자식 컴포넌트는 emit을 통해 부모 컴포넌트에게 데이터를 전달한다.F
 
 2. Vue는 단방향 데이터 흐름을 지향하는 프론트엔드 프레임워크다.
 공식문서를 참고하여 그 이유를 서술하시오.
@@ -18,8 +18,8 @@
 
 4. 다음은 자식 컴포넌트에서 이벤트를 발생시켜 부모 컴포넌트의
 함수를 실행하는 코드이다. 빈칸 (a), (b), (c)에 들어갈 코드를 작성하시오.
-a - this.#emit
-b - @child-data="onClick"
-c - onClick: function (childData) {
-      console.log(`사용자가 입력한 값은 ${childData}입니다.`)
-    }
+a - this.$emit
+b - @add-todo="onAddTodo"
+c - onAddTodo(a){
+	console.log(a)
+}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <p class=" main_title text-center">CREATE</p>
+  <form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit">
+  </form>
+  <hr>
+  <a href="{% url 'community:index' %}">[back]</a>
+  <style>
+    .main_title{
+      font-size:35px;
+      font-weight: bold;
+    }
+  </style>
+{% endblock %}

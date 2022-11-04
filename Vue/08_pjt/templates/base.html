@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      {% if user.is_authenticated %}
+      <div class="user_div justify-content-between">
+        <div>
+          <a class="aTag" href="{% url 'movies:index'%}">Movie</a>
+          <a class="aTag" href="{% url 'community:index'%}">Community</a>
+          <a class="aTag" href="{% url 'community:create'%}">New Review</a>
+          <a class="aTag" href="{% url 'movies:recommended'%}">Recommended</a>
+
+        </div>
+        <div class ="logout_div">
+          <h3>{{ user.username }}</h3>
+          <a  class ="profil text-black-50" href="{% url 'accounts:profile' user %}">내 프로필</a>
+          <form action="{% url 'accounts:logout' %}" method="POST">
+            {% csrf_token %}
+            <input class="btn btn-outline-danger" type="submit" value="Logout">
+          </form>
+        </div>
+        {% else %}
+        <a class="aTag"  href="{% url 'accounts:signup' %}">Signup</a>
+        <a class="aTag" href="{% url 'accounts:login' %}">Login</a>
+      </div>
+      {% endif %}
+    </nav>
+    {% block content %}
+    {% endblock content %}
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <style>
+    .user_div{
+      display: flex;
+      margin-top: 20px;
+    }
+    .logout_div{
+      display: flex;
+    }
+    .profil{
+      font-weight: bold;
+      text-decoration: none;
+      margin: auto 20px;
+    }
+    .aTag{
+      font-weight: bold;
+      text-decoration: none;
+      font-size:1.3rem;
+      margin: 0 2rem 0 0 ;
+    }
+  </style>
+</body>
+</html>

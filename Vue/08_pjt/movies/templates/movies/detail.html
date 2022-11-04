@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="main_box">
+    <p class="main_title">{{movie.title}}</p>
+    <img src="{{movie.poster_path}}" alt="" class='img'>
+    <p class='score'>
+        평점: {{movie.vote_average}}
+    </p>
+    <p> {{movie.overview}}</p>
+</div>
+<a href="/movies/" class="back"> 👈 목록보기</a>
+<style>
+.main_box{
+    margin-top:15px;
+    border: 1px solid lightgrey;
+    border-radius:10px;
+    padding:10px;
+    margin-bottom:10px;
+}
+.main_title{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+}
+.img {
+    width: 200px;
+}
+.img:hover {
+    width:300px;
+    transition: all 0.8s;
+}
+.score{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.back{
+    font-weight: bold;
+    text-decoration: none;
+    color:gray;
+
+}
+.back:hover{
+    color:black;
+}
+</style>
+{% endblock %}
