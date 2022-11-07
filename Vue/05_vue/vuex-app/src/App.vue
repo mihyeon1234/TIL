@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <h1>{{message}}</h1>
-    <input type="text" v-on:keyup.enter="changeMessage" v-model="inputData">
+    <h2>입력된 문자의 길이는 : {{messageLength}}</h2>
+    <h3>더블 : {{doubleLength}}</h3>
+    <input type="text" 
+    @keyup.enter="changeMessage"
+     v-model="inputData">
   </div>
 </template>
 
@@ -18,13 +22,20 @@ export default {
   },
   computed: {
     message(){
-      return this.$store.state.message+'추가'
+      return this.$store.state.message
+    },
+    messageLength(){
+      return this.$store.getters.messageLength
+    },
+    doubleLength(){
+      return this.$store.getters.doubleLength
+
     }
   },
   methods:{
     changeMessage(){
     const newMessage = this.inputData
-    this.$store.dispatch('액션메서드 이름', newMessage)
+    this.$store.dispatch('changeMessage', newMessage)
   }
   }
 }
