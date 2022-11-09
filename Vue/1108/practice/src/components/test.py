@@ -1,17 +1,3 @@
-유튭 api 키
-AIzaSyDEgtL7oYOo_OJBvIqq2MJhVxDV-IYwekc
-
-네이버 api 키
-Client ID - zp580fkHgE57jjytcezD
-Client Secre - opbueu7dbW
-
-
-https://velog.io/@nemo/movie-search-app-1
-https://leveloper.tistory.com/24
-
-네이버 영화 api
-
-파이썬 파일,,
 import os
 import sys
 import urllib.request
@@ -30,3 +16,4 @@ if(rescode==200):
     print(response_body.decode('utf-8'))
 else:
     print("Error Code:" + rescode)
+
