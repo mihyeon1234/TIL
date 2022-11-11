@@ -3,13 +3,13 @@ AIzaSyDEgtL7oYOo_OJBvIqq2MJhVxDV-IYwekc
 AIzaSyBLMEBNxzyohh-zUFGFvHA5ZpI-TLmM4JE
 AIzaSyDd-ndJ5GJOKwdBhILSGmAmDneCZEnzrKw
 
-네이버 api 키
-Client ID - zp580fkHgE57jjytcezD
-Client Secre - opbueu7dbW
-
 
 https://velog.io/@nemo/movie-search-app-1
 https://leveloper.tistory.com/24
+
+네이버 api 키
+Client ID - zp580fkHgE57jjytcezD
+Client Secre - opbueu7dbW
 
 네이버 영화 api
 
