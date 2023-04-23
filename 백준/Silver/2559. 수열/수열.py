@@ -1,31 +1,19 @@
-import sys
-input = sys.stdin.readline
-num, co = map(int, input().split())
-arr = list(map(int, input().split()))
+from sys import stdin
+input = stdin.readline
 
-# maxarr = 0
-# for i in range(num-co+1):  # 하나씩 더해서 max값 확인하기
-#     arr_plus = 0
-#     for j in range(co):
-#         arr_plus += arr[i+j]
-#         if arr_plus > maxarr:
-#             maxarr = arr_plus
+m, n = map(int, input().split())
+li = list(map(int, input().split()))
+# sum(li[i:i+n])으로 할라니까 시간초과뜸
+# 그래서 re라는 누적값 들어간 새로운 배열로 만들어줌
+re = [0]
+co = 0
+for i in li:
+    co += i
+    re.append(co)
 
-# for i in range(num-co+1):
-#     arr_plus = sum(arr[i:co+i])  # 하나씩 안더하고 co 갯수만큼 한꺼번에 더하기
-#     print(arr[i:co+i])
-#     if arr_plus > maxarr:
-#         maxarr = arr_plus
+# rre라는 새로운 배열에는 n개의 누적합만으로 이뤄진 배열로 만듬
+rre=[]
+for i in range(m-n+1):
+    rre.append(re[i+n] - re[i])
 
-n_arr = [0]
-su = 0
-for i in arr:
-    su += i
-    n_arr.append(su)
-
-rst = []
-
-for i in range(num-co+1):
-    rst.append(n_arr[i+co] - n_arr[i])
-
-print(max(rst))
+print(max(rre))
