@@ -8,7 +8,7 @@
 
 ### 분류
 
-누적 합(prefix_sum), 슬라이딩 윈도우(sliding_window), 두 포인터(two_pointer)
+누적 합, 슬라이딩 윈도우, 두 포인터
 
 ### 문제 설명
 
