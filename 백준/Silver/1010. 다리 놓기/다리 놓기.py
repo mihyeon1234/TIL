@@ -1,20 +1,16 @@
 import sys
+input = sys.stdin.readline
 
-t = int(sys.stdin.readline())
-for tt in range(t):
-    r, n = map(int, sys.stdin.readline().split())
-    if n == r:
-        print(1)
-    elif r > n:
-        print(n)
-    else:
-        mr = max(n-r, r)
-        s = 1
-        ss = 1
+def fact(a):
+    re = 1
+    for j in range(1, a+1):
+        re *= j
+    return re
 
-        for i in range(mr+1, n+1):
-            s *= i
 
-        for j in range(1,n-mr+1):
-            ss *= j
-        print(int(s/ss))
+r = int(input())
+
+for i in range(r):
+    n, m = map(int, input().split())
+    re = fact(m)//(fact(n)*fact(m-n))
+    print(re)
